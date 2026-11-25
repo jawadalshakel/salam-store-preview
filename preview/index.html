@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>احساس السلام — معاينة محلية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Tajawal:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-motion" aria-hidden="true"></canvas>
+  <div id="mouse-glow" aria-hidden="true"></div>
+  <p class="local-banner">النسخة الكاملة. المتجر المباشر لم يتغير. <a href="../index.html">العودة للاختيار</a></p>
+
+  <header class="site-header">
+    <div class="wrap top">
+      <a class="logo" href="#home" data-nav="home"><img src="logo.png?v=3" alt="احساس السلام" /></a>
+      <form class="search" id="search-form">
+        <input id="search-input" type="search" placeholder="تبحث عن منتج معين؟" />
+        <button type="submit" aria-label="بحث">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>
+        </button>
+      </form>
+      <div class="tools">
+        <a class="icon-btn" href="https://salamstore-ksa.com/cart" target="_blank" rel="noopener" aria-label="السلة">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        </a>
+        <a class="login" href="https://salamstore-ksa.com/auth/login" target="_blank" rel="noopener">تسجيل الدخول</a>
+      </div>
+    </div>
+    <nav class="wrap subnav">
+      <a href="#home" data-nav="home">الرئيسية</a>
+      <a href="#build" data-nav="build">بناء الكمبيوتر</a>
+      <a href="#bundles" data-nav="bundles">التجميعات</a>
+      <a href="#performance" data-nav="performance">أداء تجميعتك</a>
+      <a href="#home" data-nav="home" data-jump="cats">التصنيفات</a>
+      <a href="#home" data-nav="home" data-filter="home">وصل حديثاً</a>
+      <a href="https://salamstore-ksa.com/products" target="_blank" rel="noopener">جميع المنتجات</a>
+    </nav>
+  </header>
+
+  <main id="app" class="wrap"></main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div>
+        <strong>احساس السلام</strong>
+        <p>متجر أجهزة وتجميعات قيمنق. هذه معاينة للشكل فقط، والطلب يبقى على زد.</p>
+      </div>
+      <div>
+        <strong>روابط</strong>
+        <a href="#home" data-nav="home">الرئيسية</a>
+        <a href="#build" data-nav="build">بناء الكمبيوتر</a>
+        <a href="#bundles" data-nav="bundles">التجميعات</a>
+        <a href="#performance" data-nav="performance">أداء تجميعتك</a>
+      </div>
+      <div>
+        <strong>العنوان</strong>
+        <p>2748-2730 خالد بن ثابت، الشرفية، جدة 23216</p>
+      </div>
+    </div>
+    <p class="copy">معاينة محلية — لم يُنشر شيء على المتجر المباشر.</p>
+  </footer>
+
+  <nav class="dock">
+    <a href="#home" data-nav="home">الرئيسية</a>
+    <a href="#build" data-nav="build">بناء</a>
+    <a href="#bundles" data-nav="bundles">تجميعات</a>
+    <a href="https://salamstore-ksa.com/cart" target="_blank" rel="noopener">السلة</a>
+  </nav>
+  <script src="motion.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
